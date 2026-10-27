@@ -1,5 +1,7 @@
 # SIGESTAT
 
+[Français](README.md) · [English](README.en.md)
+
 ### Des données à l’annuaire statistique, dans un même espace de travail
 
 SIGESTAT accompagne les équipes qui collectent, organisent et publient des statistiques. La plateforme aide à préparer les données, construire des tableaux, les actualiser et les réunir dans un annuaire. Elle propose aussi un studio de migration et des assistants pour accompagner ces étapes.
@@ -54,6 +56,10 @@ Les évolutions ci-dessous facilitent la production, l’analyse et le partage d
 Une équipe peut créer des projets, les associer à des sources de données et y retrouver ses tableaux et ses travaux. L’application permet d’explorer les structures des sources, de rechercher des informations et d’actualiser leurs métadonnées. Les connexions disponibles dépendent de l’installation ; elles comprennent notamment des bases SQL et des sources Access.
 
 Les projets peuvent être copiés, importés ou exportés pour réutiliser un travail. Les variables de projet aident à adapter les tableaux à un contexte, par exemple une campagne, un territoire ou un sous-secteur.
+
+![Illustration animée : une équipe pose une question, l’agent prépare une proposition et l’équipe examine le résultat](images/collaboration-annuaire-fr.gif)
+
+*Illustration d’un parcours de collaboration avec l’agent de l’annuaire ; les actions proposées dépendent des droits et du mode d’autonomie.*
 
 ### Concevoir et actualiser des tableaux
 
@@ -126,6 +132,10 @@ flowchart LR
 ### Un studio pour préparer et charger les données
 
 Le **studio de migration** offre un espace visuel pour dessiner un traitement : lire un classeur ou une table, filtrer et transformer les données, puis les exporter ou les charger dans une destination. Des parcours guidés aident à établir les correspondances ; les propositions incertaines restent à examiner.
+
+![Illustration animée : l’équipe décrit son besoin, l’agent prépare un traitement et le studio aide à le vérifier](images/collaboration-migration-fr.gif)
+
+*Illustration de la préparation d’un traitement ; l’équipe contrôle le résultat avant l’exécution.*
 
 La vérification, l’aperçu et la simulation permettent de contrôler le travail avant l’exécution. Le studio donne accès à la progression, aux problèmes et aux rejets, ainsi qu’à l’historique et aux versions des traitements.
 
