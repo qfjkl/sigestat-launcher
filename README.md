@@ -59,6 +59,8 @@ Les projets peuvent être copiés, importés ou exportés pour réutiliser un tr
 
 Le concepteur de tableaux permet de définir une présentation, de choisir les données à utiliser et d’organiser les lignes et les colonnes. Il prend en charge les regroupements, les totaux, les formules, les filtres, les tris et les correspondances entre les libellés et les données.
 
+Il peut croiser **plusieurs axes d’analyse** dans un même tableau : par exemple, les effectifs d’élèves par région, année et sexe. À partir de la configuration et des correspondances définies, SIGESTAT compile automatiquement les requêtes SQL nécessaires pour récupérer et agréger les données de la source.
+
 On peut prévisualiser le résultat, ajuster son style et l’exporter, notamment vers **Excel** ou **Word**. Une configuration enregistrée peut être réutilisée et actualisée lorsque les données changent, sans recommencer la mise en forme.
 
 ![Interface de correspondance entre les libellés du tableau et les données](images/correspondances.png)
@@ -68,6 +70,8 @@ On peut prévisualiser le résultat, ajuster son style et l’exporter, notammen
 ### Décliner un tableau pour plusieurs besoins
 
 Une équipe peut partir d’un **tableau de référence** et créer une famille de tableaux pour les années, régions, programmes ou autres valeurs qu’elle choisit. Elle sélectionne les combinaisons utiles avant de lancer la génération, recherche celles qui l’intéressent et peut adapter les filtres de certaines variantes.
+
+Cette déclinaison fait **gagner du temps** : au lieu de recréer et de mettre en forme chaque tableau séparément, l’équipe réutilise le modèle et génère les variantes dont elle a besoin.
 
 Par exemple, un tableau conçu pour suivre les effectifs peut être décliné par année et par territoire, puis regroupé avec ses variantes dans le projet. Les choix d’héritage aident à mettre à jour une famille tout en conservant les adaptations voulues sur certains tableaux.
 
@@ -106,9 +110,9 @@ Les **analyses rédigées** sont enregistrées dans le projet, à côté des tab
 
 Les graphiques sont construits à partir des tableaux cités dans l’analyse : le lecteur peut retrouver les chiffres qu’ils illustrent et consulter les détails au survol dans l’application. Le document conserve les tableaux tels qu’ils étaient lors de son enregistrement : ses chiffres ne se mettent pas automatiquement à jour. SIGESTAT signale si la configuration d’un tableau cité a changé ou si ce tableau a disparu ; une simple actualisation des données ne déclenche pas nécessairement cette alerte. L’équipe doit donc vérifier les dates et revoir l’analyse lorsque ses données évoluent.
 
-![Exemple d’analyse présentant un tableau et un graphique de suivi par région](images/analyse-demonstration.png)
+![Exemple fictif d’analyse des effectifs scolaires par région et par sexe](images/analyse-demonstration.png)
 
-*Rendu de démonstration produit par le moteur d’analyse SIGESTAT, avec des valeurs fictives.*
+*Illustration d’un exemple d’analyse dans l’éducation. Les données sont fictives ; la mise en page illustre les possibilités de l’application.*
 
 ```mermaid
 flowchart LR
