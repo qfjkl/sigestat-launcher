@@ -8,6 +8,8 @@ Cette page présente les fonctions qui constituent le socle de SIGESTAT et les p
 
 [**Télécharger SIGESTAT pour Windows**](https://github.com/qfjkl/sigestat-launcher/releases/latest/download/SIGESTAT.exe) · [Voir les fichiers disponibles](https://github.com/qfjkl/sigestat-launcher/releases/latest)
 
+[Déclinaisons](#décliner-un-tableau-pour-plusieurs-besoins) · [Actualisation](#actualiser-les-tableaux-en-masse-ou-par-sélection) · [Analyses](#passer-des-tableaux-à-lanalyse) · [Versions](#retrouver-les-versions-et-lhistorique) · [Agents](#des-assistants-pour-accompagner-le-travail) · [Comptes et rôles](#comptes-rôles-et-organisations)
+
 > **Deux versions à distinguer.** Le fichier téléchargé est le *lanceur* Windows, actuellement en version **1.2.1**. Il démarre l’application SIGESTAT, dont la version est affichée dans son interface. Les fonctionnalités accessibles dépendent aussi des mises à jour et de la configuration de votre installation.
 
 ```mermaid
@@ -20,6 +22,20 @@ flowchart LR
 ```
 
 *Les captures de cette page illustrent des scénarios de démonstration. La présentation peut évoluer selon la version et les réglages de l’installation.*
+
+## Pour les organisations et leurs partenaires
+
+ONG, associations, administrations et équipes de projet peuvent utiliser SIGESTAT pour organiser des données, préparer des rapports et conserver une trace du travail effectué. Les indicateurs et les périmètres sont définis par les équipes : l’outil peut ainsi servir dans l’éducation, la santé ou d’autres domaines, selon les données disponibles.
+
+Par exemple, une organisation peut préparer un même tableau de suivi pour plusieurs régions et plusieurs années, actualiser les tableaux concernés à la réception de nouvelles données, puis accompagner les résultats d’une analyse et d’une publication. Elle peut partager une copie du projet avec une autre équipe, sous réserve de ses droits et des sources disponibles.
+
+| Besoin courant | Ce que permet SIGESTAT |
+|---|---|
+| Produire des tableaux cohérents pour plusieurs territoires ou périodes | Décliner un tableau de référence selon les combinaisons choisies. |
+| Mettre à jour un rapport périodique | Actualiser tous les tableaux d’un projet ou seulement un ensemble sélectionné. |
+| Expliquer les chiffres à des partenaires ou à des décideurs | Préparer des analyses avec du texte, des chiffres clés, des tableaux et des graphiques. |
+| Travailler à plusieurs et suivre les changements | Organiser les comptes et les projets, consulter l’historique et retrouver des versions. |
+| Réutiliser un travail ou préparer une nouvelle édition | Copier ou transférer un projet, ses tableaux, ses analyses et ses réglages. |
 
 ## Ce que SIGESTAT permet de faire
 
@@ -51,11 +67,45 @@ Les tableaux peuvent être réunis dans un annuaire à partir d’une maquette W
 
 ### Des tableaux plus faciles à décliner et à présenter
 
-- **Familles et déclinaisons** : à partir d’un tableau de référence, préparer des variantes selon les valeurs retenues, par exemple plusieurs années ou plusieurs territoires. Les choix d’héritage permettent de conserver les adaptations nécessaires.
 - **Modèles réutilisables** : retrouver des réglages de projet et de tableau pour gagner du temps lors de la création de nouveaux travaux.
 - **Présentation et lisibilité** : personnaliser les styles, les unités, les totaux et la visibilité des lignes ou colonnes. Les en-têtes et les valeurs restent alignés lorsque des sections n’ont pas exactement les mêmes catégories.
 - **Valeurs statistiques** : lorsque la fonction est activée pour le projet, distinguer un vrai zéro d’une donnée manquante, indisponible, hors champ ou non calculable, avec des marqueurs configurables. Le remplacement visuel des zéros conserve leur valeur numérique dans les exports.
 - **Mentions et édition** : préparer les lignes Source, les variables d’édition et les références des tableaux dans les documents de publication.
+
+### Décliner un tableau pour plusieurs besoins
+
+Une équipe peut partir d’un **tableau de référence** et créer une famille de tableaux pour les années, régions, programmes ou autres valeurs qu’elle choisit. Elle sélectionne les combinaisons utiles avant de lancer la génération, recherche celles qui l’intéressent et peut adapter les filtres de certaines variantes.
+
+Par exemple, un tableau conçu pour suivre les effectifs peut être décliné par année et par territoire, puis regroupé avec ses variantes dans le projet. Les choix d’héritage aident à mettre à jour une famille tout en conservant les adaptations voulues sur certains tableaux.
+
+![Sélection de déclinaisons d’un tableau par année et par région](images/declinaisons.png)
+
+*Exemple de démonstration : l’équipe choisit les croisements année × région qui donneront lieu à des tableaux.*
+
+### Actualiser les tableaux en masse ou par sélection
+
+Quand les données de la source évoluent, il est possible d’**actualiser l’ensemble des tableaux d’un projet**, sans les ouvrir un par un. Une actualisation ciblée permet aussi de choisir une famille, une sélection de tableaux, une année ou certaines combinaisons de variables.
+
+Avant le lancement, l’interface présente le périmètre et le nombre de tableaux concernés. L’équipe peut suivre la progression et consulter les résultats et les difficultés rencontrées. Cela facilite la préparation d’une nouvelle campagne tout en laissant le choix de ce qui doit être recalculé.
+
+### Passer des tableaux à l’analyse
+
+Les **analyses rédigées** sont enregistrées dans le projet, à côté des tableaux. Elles permettent de rassembler une explication, des chiffres clés, des tableaux de référence, des graphiques et des notes dans un même document. L’assistant peut aider à préparer une proposition d’analyse, que l’utilisateur examine avant son enregistrement.
+
+Les graphiques sont construits à partir des tableaux cités dans l’analyse : le lecteur peut ainsi retrouver les chiffres qu’ils illustrent. Si un tableau source change après la rédaction, SIGESTAT le signale pour aider l’équipe à vérifier et, si nécessaire, revoir l’analyse ; le texte n’est pas réécrit automatiquement.
+
+```mermaid
+flowchart LR
+    A["Tableaux<br/>du projet"] --> B["Chiffres clés<br/>et graphiques"]
+    B --> C["Analyse rédigée<br/>et documentée"]
+    A -. "changement signalé" .-> C
+```
+
+### Retrouver les versions et l’historique
+
+Les modifications de configuration d’un tableau peuvent être retrouvées dans son **historique des versions** : date, auteur, origine et résumé des changements lorsqu’ils sont disponibles. Une configuration précédente peut être consultée et restaurée ; la restauration est elle-même conservée dans l’historique lorsqu’elle modifie la configuration.
+
+Les analyses possèdent également leurs versions. Dans le studio de migration, l’historique permet de consulter les versions d’un traitement et de reprendre une version comme point de départ. Les résultats déjà enregistrés et la configuration d’un tableau sont deux éléments distincts : retrouver une ancienne configuration ne remplace pas à elle seule les données de la source.
 
 ### Un studio pour préparer et charger les données
 
@@ -71,7 +121,21 @@ Les classeurs utilisés dans les projets peuvent être retrouvés, téléchargé
 
 ### Des assistants pour accompagner le travail
 
-L’assistant de l’annuaire aide à explorer les sources et les tableaux, à répondre aux questions et à préparer des propositions. Dans le studio, l’agent de migration peut notamment aider à préparer un traitement, proposer des correspondances, lancer une simulation et expliquer les résultats.
+Les deux agents accompagnent des tâches différentes à partir d’une conversation. Leurs capacités dépendent du modèle configuré, des données accessibles et des droits de la personne qui les utilise.
+
+**L’agent de l’annuaire** peut notamment :
+
+- explorer les sources et les tableaux du projet, répondre à des questions et expliquer des résultats ;
+- préparer ou modifier des propositions de tableaux, de correspondances, de filtres et de styles ;
+- proposer des déclinaisons, des analyses rédigées ou une demande de vue SIGESTAT ;
+- consulter les analyses et les versions disponibles pour aider à comprendre un travail existant.
+
+**L’agent de migration** peut notamment :
+
+- explorer les projets, les sources, les classeurs et les traitements accessibles ;
+- préparer ou modifier un traitement, ses composants et ses correspondances ;
+- créer un classeur ou un modèle de lecture, proposer des corrections de cellules et un partage entre projets ;
+- proposer un aperçu ou une simulation, suivre son résultat et aider à comprendre les problèmes ou les rejets.
 
 Trois réglages d’autonomie permettent de choisir la manière de travailler :
 
@@ -81,7 +145,7 @@ Trois réglages d’autonomie permettent de choisir la manière de travailler :
 | **Demander** | Examiner et accepter ou refuser les actions proposées. |
 | **Automatique** | Appliquer les actions autorisées par les droits et les règles de l’installation. |
 
-L’exécution d’un chargement dans une base reste une décision prise dans le studio. Les conversations peuvent être retrouvées ; le déroulement du travail et les appels d’outils sont consultables dans des sections repliables. Les entrées et sorties d’outils disponibles peuvent être copiées.
+L’exécution d’un chargement dans une base reste une décision prise dans le studio. Une proposition de vue suit également son propre circuit d’approbation. Les conversations peuvent être retrouvées ; le déroulement du travail et les appels d’outils sont consultables dans des sections repliables. Les entrées et sorties disponibles, éventuellement limitées par les règles de confidentialité, peuvent être copiées.
 
 ![Agent de migration ouvert dans le studio](images/agent-migration.png)
 
@@ -102,9 +166,13 @@ Les **vues SIGESTAT** permettent de réutiliser une définition de données dans
 
 Par défaut, le compte configuré pour la source est utilisé pour enregistrer les vues ; un compte dédié peut également être renseigné. Les droits nécessaires sont vérifiés avant l’exécution.
 
-### Travail en équipe, accès et suivi
+### Comptes, rôles et organisations
 
-SIGESTAT propose des comptes, des organisations, des rôles et un suivi de l’activité. La connexion est demandée par défaut pour accéder aux fonctions métier. La prise en compte des rôles et les autorisations effectives dépendent de la configuration de l’installation.
+SIGESTAT propose des écrans d’administration pour gérer les **comptes**, les **organisations**, les **rôles** et les **habilitations**. Une organisation peut représenter une structure ou une équipe ; les habilitations peuvent être attribuées sur un périmètre approprié, par exemple une organisation ou certains projets.
+
+Les rôles proposés couvrent notamment la lecture, la conception et la validation des tableaux, la gestion des sources, la conception des flux de migration, le chargement et l’administration. Des rôles peuvent aussi être adaptés aux besoins de l’installation. Les administrateurs disposent d’outils pour activer ou désactiver un compte, attribuer des rôles et émettre un code provisoire lorsqu’un utilisateur doit choisir un nouveau mot de passe.
+
+Un journal d’activité aide à retrouver les actions enregistrées. La connexion est demandée par défaut pour les fonctions métier. **L’application effective des permissions et des périmètres est un réglage distinct** : elle dépend de la configuration de l’installation et doit être activée et vérifiée par l’équipe administratrice. Les possibilités réellement accessibles à chaque personne et aux agents en dépendent.
 
 Les écrans ont également évolué pour faciliter la navigation au clavier, l’utilisation sur des écrans plus étroits et le passage entre les thèmes et les langues disponibles.
 
