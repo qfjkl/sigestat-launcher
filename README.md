@@ -4,11 +4,11 @@
 
 SIGESTAT accompagne les équipes qui collectent, organisent et publient des statistiques. La plateforme aide à préparer les données, construire des tableaux, les actualiser et les réunir dans un annuaire. Elle propose aussi un studio de migration et des assistants pour accompagner ces étapes.
 
-Cette page présente les fonctions qui constituent le socle de SIGESTAT et les principales évolutions apportées jusqu’au **27 octobre 2026**. Elle s’adresse aux personnes qui utilisent ou découvrent l’application ; ce n’est pas une liste technique de tous les changements du code.
+Cette page présente les fonctions qui constituent le socle de SIGESTAT et ses principales évolutions. Elle s’adresse aux personnes qui utilisent ou découvrent l’application ; ce n’est pas une liste technique de tous les changements du code.
 
 [**Télécharger SIGESTAT pour Windows**](https://github.com/qfjkl/sigestat-launcher/releases/latest/download/SIGESTAT.exe) · [Voir les fichiers disponibles](https://github.com/qfjkl/sigestat-launcher/releases/latest)
 
-[Nouveautés d’octobre](#nouveautés-doctobre-2026) · [Tableaux et annuaires](#produire-et-actualiser-des-tableaux) · [Analyses et tableaux de bord](#analyser-et-décider) · [Migration](#préparer-et-migrer-les-données) · [Travail en équipe](#travailler-en-équipe-et-garder-une-trace) · [Agents](#les-agents-sigestat) · [Installation](#installer-et-démarrer)
+[Nouveautés](#nouveautés) · [Tableaux et annuaires](#produire-et-actualiser-des-tableaux) · [Analyses et tableaux de bord](#analyser-et-décider) · [Migration](#préparer-et-migrer-les-données) · [Travail en équipe](#travailler-en-équipe-et-garder-une-trace) · [Agents](#les-agents-sigestat) · [Installation](#installer-et-démarrer)
 
 > **Deux versions à distinguer.** Le fichier téléchargé est le *lanceur* Windows, actuellement en version **1.2.1**. Il démarre l’application SIGESTAT, dont la version est affichée dans son interface. Les fonctionnalités accessibles dépendent aussi des mises à jour et de la configuration de votre installation.
 
@@ -37,16 +37,15 @@ Par exemple, une organisation peut préparer un même tableau de suivi pour plus
 | Travailler à plusieurs et suivre les changements | Organiser les comptes et les projets, consulter l’historique et retrouver des versions. |
 | Réutiliser un travail ou préparer une nouvelle édition | Copier ou transférer un projet, ses tableaux, ses analyses et ses réglages. |
 
-## Nouveautés d’octobre 2026
+## Nouveautés
 
-Les évolutions ci-dessous ont été intégrées à la branche principale au cours du mois. Certaines s’appuient sur des travaux commencés auparavant ; leur disponibilité sur un poste dépend de sa mise à jour et de sa configuration.
+Les évolutions ci-dessous facilitent la production, l’analyse et le partage des données. Leur disponibilité sur un poste dépend de sa mise à jour et de sa configuration.
 
-| Période | Ce qui change pour les équipes |
-|---|---|
-| **6–8 octobre** | Arrivée de l’assistant, des analyses consultables depuis les projets, des comptes et rôles, et du studio de migration. Les familles de tableaux, les exports Word et l’accès au premier compte ont également été améliorés. |
-| **10 octobre** | Le lanceur dispose d’un mécanisme de mise à jour automatique vérifiée ; l’interface de correspondance des données devient plus facile à parcourir. |
-| **19–20 octobre** | Le transfert de projets conserve davantage de contenu et de réglages ; les mentions de publication et les déclinaisons progressent. La récupération de l’accès administrateur et les contrôles des actions sensibles sont renforcés. |
-| **27 octobre** | Le studio et son agent gagnent des fonctions pour les classeurs et les traitements ; les conversations, l’alignement des tableaux, l’affichage des valeurs statistiques et la reprise des demandes de vues sont améliorés. |
+- **Analyses et assistance** : un assistant accompagne les équipes et les analyses sont accessibles depuis les projets. Les conversations bénéficient également d’améliorations.
+- **Tableaux et publication** : les familles de tableaux, les déclinaisons, les exports Word, les mentions de publication, l’alignement et l’affichage des valeurs statistiques ont été améliorés. La correspondance des données est plus facile à parcourir.
+- **Migration et données** : le studio de migration et son agent proposent des fonctions pour les classeurs et les traitements. La reprise des demandes de vues a été améliorée.
+- **Travail en équipe et sécurité** : les comptes et rôles, l’accès au premier compte, la récupération de l’accès administrateur et les contrôles des actions sensibles facilitent la gestion des accès.
+- **Installation et transfert** : le lanceur dispose d’un mécanisme de mise à jour automatique vérifiée. Le transfert de projets conserve davantage de contenu et de réglages.
 
 ## Produire et actualiser des tableaux
 
